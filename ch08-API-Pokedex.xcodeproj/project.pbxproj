@@ -62,8 +62,9 @@
 			children = (
 				48A8F1941CF64B2800A31695 /* Model */,
 				48A8F1951CF6601600A31695 /* View */,
-				48A8F17E1CF4FF1D00A31695 /* AppDelegate.swift */,
+				48A8F1981CFF8DAE00A31695 /* Controller */,
 				48A8F1801CF4FF1D00A31695 /* ViewController.swift */,
+				48A8F17E1CF4FF1D00A31695 /* AppDelegate.swift */,
 				48A8F1901CF5084800A31695 /* pokemon.csv */,
 				48A8F1821CF4FF1D00A31695 /* Main.storyboard */,
 				48A8F1851CF4FF1D00A31695 /* Assets.xcassets */,
@@ -87,6 +88,13 @@
 				48A8F1961CF6603800A31695 /* PokeCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		48A8F1981CFF8DAE00A31695 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
