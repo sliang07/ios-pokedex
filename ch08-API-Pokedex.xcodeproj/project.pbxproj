@@ -16,6 +16,8 @@
 		48A8F1931CF50E8300A31695 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8F1921CF50E8300A31695 /* Pokemon.swift */; };
 		48A8F1971CF6603800A31695 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8F1961CF6603800A31695 /* PokeCell.swift */; };
 		48A8F19A1D00E02100A31695 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8F1991D00E02100A31695 /* csv.swift */; };
+		48A8F19E1D06264500A31695 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48A8F19D1D06264500A31695 /* PokemonSolid.ttf */; };
+		48A8F1A01D06333800A31695 /* pokemonmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48A8F19F1D06333800A31695 /* pokemonmusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		48A8F1921CF50E8300A31695 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		48A8F1961CF6603800A31695 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		48A8F1991D00E02100A31695 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = ../csv.swift; sourceTree = "<group>"; };
+		48A8F19D1D06264500A31695 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
+		48A8F19F1D06333800A31695 /* pokemonmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pokemonmusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		48A8F19C1D00E13D00A31695 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				48A8F19F1D06333800A31695 /* pokemonmusic.mp3 */,
+				48A8F19D1D06264500A31695 /* PokemonSolid.ttf */,
 				48A8F1901CF5084800A31695 /* pokemon.csv */,
 			);
 			name = Resources;
@@ -177,6 +183,8 @@
 				48A8F1891CF4FF1D00A31695 /* LaunchScreen.storyboard in Resources */,
 				48A8F1861CF4FF1D00A31695 /* Assets.xcassets in Resources */,
 				48A8F1911CF5084800A31695 /* pokemon.csv in Resources */,
+				48A8F19E1D06264500A31695 /* PokemonSolid.ttf in Resources */,
+				48A8F1A01D06333800A31695 /* pokemonmusic.mp3 in Resources */,
 				48A8F1841CF4FF1D00A31695 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
