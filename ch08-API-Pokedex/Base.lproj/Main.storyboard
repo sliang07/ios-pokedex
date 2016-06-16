@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -193,6 +193,9 @@
                                             <constraint firstAttribute="width" constant="55" id="sXh-lo-2Ir"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="back_arrow"/>
+                                        <connections>
+                                            <action selector="backBTNpressed:" destination="IPv-7k-Gko" eventType="touchUpInside" id="BHm-Im-09B"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charizard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-bZ-S2o">
                                         <rect key="frame" x="208" y="17" width="184" height="21"/>
@@ -432,7 +435,15 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="currentevolveIMG" destination="bJh-JR-025" id="PQD-Jf-5g2"/>
+                        <outlet property="defenseLbl" destination="JHc-hM-rus" id="gk9-9d-Xwv"/>
+                        <outlet property="descriptionLbl" destination="anU-0n-lbV" id="Q9y-Xx-zwK"/>
+                        <outlet property="heightLbl" destination="KR5-gv-DsO" id="Iif-QH-jgw"/>
+                        <outlet property="mainIMG" destination="KHD-CP-TCg" id="9pd-uV-tiX"/>
                         <outlet property="nameLbl" destination="Zh3-bZ-S2o" id="OIW-3V-6Kx"/>
+                        <outlet property="nextevolveIMG" destination="a3o-0R-Iek" id="74L-Qu-TCK"/>
+                        <outlet property="pokedexLbl" destination="4nn-S2-xrY" id="xPD-Zj-KcL"/>
+                        <outlet property="typeLbl" destination="YLf-dd-zdZ" id="qgK-Qa-dVM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMU-ua-zwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
