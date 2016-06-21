@@ -16,17 +16,24 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     
     @IBOutlet weak var typeLbl: UILabel!
-    var pokemon: Pokemon!
     @IBOutlet weak var defenseLbl: UILabel!
     @IBOutlet weak var pokedexLbl: UILabel!
 
     @IBOutlet weak var currentevolveIMG: UIImageView!
     
     @IBOutlet weak var nextevolveIMG: UIImageView!
+    
+    var pokemon: Pokemon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         nameLbl.text = pokemon.name
+        mainIMG.image = UIImage(named: "\(pokemon.pokedexId)")
+        
+        pokemon.downloadPokemonDetails { () -> () in
+            
+        }
     }
     
 

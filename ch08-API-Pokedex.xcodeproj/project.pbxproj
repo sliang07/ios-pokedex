@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A5F26D14FAF446CE484F538 /* Pods_ch08_API_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD75F16B75306CBC8B3015B7 /* Pods_ch08_API_Pokedex.framework */; };
+		48788DBB1D18B3C3001DCCB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48788DBA1D18B3C3001DCCB0 /* Constants.swift */; };
 		48A8F17F1CF4FF1D00A31695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8F17E1CF4FF1D00A31695 /* AppDelegate.swift */; };
 		48A8F1811CF4FF1D00A31695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8F1801CF4FF1D00A31695 /* ViewController.swift */; };
 		48A8F1841CF4FF1D00A31695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A8F1821CF4FF1D00A31695 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48788DBA1D18B3C3001DCCB0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		48A8F17B1CF4FF1D00A31695 /* ch08-API-Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ch08-API-Pokedex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A8F17E1CF4FF1D00A31695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A8F1801CF4FF1D00A31695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				48A8F1991D00E02100A31695 /* csv.swift */,
+				48788DBA1D18B3C3001DCCB0 /* Constants.swift */,
 			);
 			name = utility;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				48A8F1811CF4FF1D00A31695 /* ViewController.swift in Sources */,
 				48A8F17F1CF4FF1D00A31695 /* AppDelegate.swift in Sources */,
 				48A8F1A41D08D33500A31695 /* PokemonDetailVC.swift in Sources */,
+				48788DBB1D18B3C3001DCCB0 /* Constants.swift in Sources */,
 				48A8F1931CF50E8300A31695 /* Pokemon.swift in Sources */,
 				48A8F19A1D00E02100A31695 /* csv.swift in Sources */,
 			);
