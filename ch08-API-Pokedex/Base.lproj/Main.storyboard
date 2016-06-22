@@ -263,7 +263,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZVl-Kc-AdV">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZVl-Kc-AdV">
                                 <rect key="frame" x="20" y="70" width="560" height="363"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-CG-6Ah">
@@ -276,9 +276,12 @@
                                             <segment title="Moves"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="0.32958631170000002" blue="0.25778769699999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="segControlChange:" destination="IPv-7k-Gko" eventType="valueChanged" id="m57-LC-Hc4"/>
+                                        </connections>
                                     </segmentedControl>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Jn0-yl-SdQ">
-                                        <rect key="frame" x="0.0" y="49" width="560" height="120"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-UV-Nkw">
+                                        <rect key="frame" x="0.0" y="62" width="560" height="120"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="533" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-CP-TCg">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -287,51 +290,51 @@
                                                     <constraint firstAttribute="height" constant="120" id="f0J-Vg-9ku"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="anU-0n-lbV">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-5R-XY8">
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero elit, hendrerit elementum magna nec, vulputate fringilla eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero elit, hendrerit elementum magna nec, vulputate fringilla eros. </string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-de-idQ">
-                                        <rect key="frame" x="0.0" y="189" width="560" height="82"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-de-idQ">
+                                        <rect key="frame" x="0.0" y="214" width="560" height="21"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tq-xJ-rGn">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="82"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tq-xJ-rGn">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.32958631170000002" blue="0.25778769699999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ghost/Fire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLf-dd-zdZ">
-                                                <rect key="frame" x="140" y="0.0" width="140" height="82"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ghost/Fire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLf-dd-zdZ">
+                                                <rect key="frame" x="140" y="3" width="140" height="16"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Lo-Egj">
-                                                <rect key="frame" x="280" y="0.0" width="140" height="82"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Lo-Egj">
+                                                <rect key="frame" x="280" y="0.0" width="140" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" red="1" green="0.32958631170000002" blue="0.25778769699999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHc-hM-rus">
-                                                <rect key="frame" x="420" y="0.0" width="140" height="82"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="201" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHc-hM-rus">
+                                                <rect key="frame" x="420" y="3" width="140" height="16"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-DL-aGA">
-                                        <rect key="frame" x="0.0" y="291" width="560" height="1"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-DL-aGA">
+                                        <rect key="frame" x="0.0" y="267" width="560" height="1"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.42750538793103449" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Yx2-d9-Tm5"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KR5-gv-DsO">
-                                        <rect key="frame" x="0.0" y="312" width="560" height="16"/>
+                                        <rect key="frame" x="0.0" y="300" width="560" height="16"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykf-nK-Xtn">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="16"/>
@@ -435,14 +438,19 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="baseAttack" destination="CSi-Od-z3n" id="GTd-mv-mwW"/>
                         <outlet property="currentevolveIMG" destination="bJh-JR-025" id="PQD-Jf-5g2"/>
                         <outlet property="defenseLbl" destination="JHc-hM-rus" id="gk9-9d-Xwv"/>
-                        <outlet property="descriptionLbl" destination="anU-0n-lbV" id="Q9y-Xx-zwK"/>
+                        <outlet property="descriptionLbl" destination="gmZ-5R-XY8" id="G31-bH-YAt"/>
+                        <outlet property="evoLbl" destination="gAa-Vq-qAp" id="LQo-7c-Vlo"/>
+                        <outlet property="heightLbl" destination="M4g-Kc-7p3" id="uX8-jZ-44i"/>
                         <outlet property="mainIMG" destination="KHD-CP-TCg" id="9pd-uV-tiX"/>
                         <outlet property="nameLbl" destination="Zh3-bZ-S2o" id="OIW-3V-6Kx"/>
                         <outlet property="nextevolveIMG" destination="a3o-0R-Iek" id="74L-Qu-TCK"/>
                         <outlet property="pokedexLbl" destination="4nn-S2-xrY" id="xPD-Zj-KcL"/>
+                        <outlet property="segmentcontroller" destination="Zit-CG-6Ah" id="mY9-dk-fSS"/>
                         <outlet property="typeLbl" destination="YLf-dd-zdZ" id="qgK-Qa-dVM"/>
+                        <outlet property="weightLbl" destination="RLi-NF-c5d" id="zAj-Zw-hYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMU-ua-zwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
