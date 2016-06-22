@@ -51,6 +51,7 @@ class PokemonDetailVC: UIViewController {
         if pokemon.nextevolutionId == "" {
             evoLbl.text = "No Evolutions"
             nextevolveIMG.hidden = true
+            
         } else {
             nextevolveIMG.hidden = false
             nextevolveIMG.image = UIImage(named: pokemon.nextevolutionId)

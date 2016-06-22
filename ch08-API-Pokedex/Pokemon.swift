@@ -177,11 +177,18 @@ class Pokemon {
                 } else {
                     self._description = ""
                 }
-                
+                print(dict)
                 if let evolutions = dict["evolutions"] as? [Dictionary<String, AnyObject>]
                 where evolutions.count > 0 {
                     
                     if let to = evolutions[0]["to"] as? String {
+
+                        //Ninetails,Electabuzz, Jynx, Starmie shows next evolutions
+                        //Possible API error, info is incorrect
+                        if dict["name"] as? String == "Ninetales" || dict["name"] as? String == "Starmie"
+                        || dict["name"] as? String == "Jynx" || dict["name"] as? String == "Electabuzz" {
+                            return
+                        }
                         
                         //Can't support mega pokemon right now but
                         //api still has mega data

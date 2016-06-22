@@ -220,14 +220,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fMC-9U-DIt">
                                 <rect key="frame" x="20" y="472" width="560" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="234" translatesAutoresizingMaskIntoConstraints="NO" id="bJh-JR-025">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJh-JR-025">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="E63-oP-3sA"/>
                                             <constraint firstAttribute="height" constant="100" id="pzs-Lj-Hxq"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="a3o-0R-Iek">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3o-0R-Iek">
                                         <rect key="frame" x="280" y="0.0" width="280" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="jAy-iY-olM"/>
@@ -239,7 +239,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mET-hK-fQ1">
                                 <rect key="frame" x="0.0" y="418" width="600" height="35"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution: Venasaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAa-Vq-qAp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAa-Vq-qAp">
                                         <rect key="frame" x="117" y="6" width="345" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="345" id="HvP-DA-fPH"/>
@@ -283,7 +283,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-UV-Nkw">
                                         <rect key="frame" x="0.0" y="62" width="560" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="533" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-CP-TCg">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-CP-TCg">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="NeU-LZ-X2H"/>
@@ -293,7 +293,6 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-5R-XY8">
                                                 <rect key="frame" x="120" y="0.0" width="440" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -459,10 +458,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="111" width="120" height="120"/>
-        <image name="234" width="96" height="96"/>
         <image name="297" width="120" height="120"/>
-        <image name="533" width="120" height="120"/>
         <image name="back_arrow" width="626" height="478"/>
         <image name="music" width="353" height="382"/>
         <image name="pokebg" width="1920" height="1200"/>
